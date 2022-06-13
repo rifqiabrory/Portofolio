@@ -1,0 +1,149 @@
+1. You need serverless computing for file processing and running the backend of a website; which two products can you choose from Google Cloud Platform?
+    -> App Engine dan Cloud Functions
+
+2. Why can cloud providers offer elastic resource allocation?
+    -> Extensive resources and the ability to quickly shift resources between customers enables public cloud providers to offer elastic resource allocation more efficiently than can be done in smaller data centers.
+
+3. A user prefers services that require minimal setup. Why would you recommend Cloud Storage, App Engine, and Cloud Functions?
+    -> They are serverless.
+
+4. You have created a virtual machine. Which of the following system administration operations are you allowed to perform on it?
+    -> All of the above
+
+5. You have been asked to set up network security in a virtual private cloud. Your company wants to have multiple subnetworks and limit traffic between the subnetworks. Which network security control would you use to control the flow of traffic between subnets?
+    -> Firewall
+
+6. You are deploying a new relational database to support a web application. Which type of storage system would you use to store data files of the database?
+    -> Block storage
+
+7. What is the unit per minute cost of a virtual server based on?
+    -> The characteristics of the server
+
+8. If you use a cluster that is managed by a cloud provider, which of these will be managed for you by the cloud provider?
+    -> All of the above
+
+9. While working on a project, an application administrator has been given the responsibility of managing all resources. He wants to delegate the responsibility of managing the existing service accounts to another administrator. He will also be responsible to manage the other service accounts that will be created. Which of the following is the best way to delegate the privileges required to manage all the service accounts?
+    -> Granting iam.serviceAccountUser to the administrator at the project level
+
+10. You created a bucket in cloud storage and uploaded some files and then enabled object versioning on it. Which version will the files you have already added will have?
+    -> 1
+
+11. What is the gcloud command to create a cluster named ch09-cluster10 with four nodes?
+    -> gcloud container clusters create ch09-cluster10 --num-nodes=4
+
+12. You have been hired as a contractor by one of the travel technology companies that is planning to containerize their existing applications in such a way that they can perform a lift and shift very easily in the future if they plan to move away from Google Cloud. Which service will best suit this case?
+    -> Kubernetes Engine
+
+13. Which command will let you enable Google Compute service using gcloud CLI?
+    -> gcloud services enable compute
+
+14. What is the command for creating a storage bucket that has once per month access and is named “archive_bucket”?
+    -> gsutil mb -c nearline gs://archive_bucket
+
+15. You created a Cloud SQL instance with automated backup switched on. After a few weeks your manager asked you to restore a 12 days older snapshot. While restoring the snapshot you notice that there are only 7 automated backups available. What can be the reason?
+    -> 
+
+16. You are building up an application for your client which has API, Web, App and DB layer. The client has asked you to decouple the application so that each request is successfully acknowledged and processed by the application layer. Which service will you use for the same?
+    -> Pub/Sub
+
+17. You are working for a genomics company in the US that is planning to conduct data analysis on around 10 TB of data. The company would require 20 vCPUs and 60GB of RAM for the same. You have been asked to figure out the cheapest option to conduct the analysis. Which of the following would you use?
+    -> Preemptible instances
+
+18. Your managers want you to suggest a low-cost storage option that could be used to share read-only data across multiple instances with high performance and no edge caching. Which storage option would you suggest?
+    -> Cloud Storage
+
+19. Your client wants to develop a new cost-effective web application that runs on a serverless platform using Cloud Function, Cloud Storage, Pub/Sub, and Cloud CDN. The expected data would be 20 GB. Which of the following databases would be the most suitable schemaless option to support the serverless functionality?
+    -> Cloud Firestore
+
+20. Which of the following commands could be used to change the storage class of an object in Cloud Storage?
+    -> gsutil rewrite -s [STORAGE_CLASS] gs://Reports-PDF/[OBJECT_NAME]
+
+21. You work for a retail company that has a busy online store. As you are approaching the new year, you find that your e-store is getting more and more traffic. You ensure that your web servers are behind a managed instance group. However, you notice that the web tier is frequently scaling, sometimes multiple times in an hour. You need to keep the instance group from scaling up and down so rapidly. Which of the following options would help you achieve this?
+    -> Reduce the number of maximum instance counts.
+
+22. You are planning to build a microservice application with docker containers and want to host them on Google Cloud as stateless and serverless. Which service will help you serve the need?
+    -> Cloud Run
+
+23. You have been asked to automate the infrastructure deployment using Google Deployment Manager service. Which format does the Deployment Manager template support?
+    -> YAML
+
+24. Engineering team is building an application which routes requests on the TCP layer. They need a load balancer with support of SSL termination on load balancer. Which of the following is the best available option?
+    -> SSL Proxy Load Balancer
+
+25. You created an application for a large hospital which stores around 1 GB of files every day on GCS. Most of these files are accessed very rarely after six months from the day of the first upload but are important and cannot be deleted. Which storage class would you prefer to save money after 6 months?
+    -> Coldline
+
+26. Your team is building a media collection and analysis application for one of your clients. They have asked you to enable Google Photos API and YouTube API. Moreover, they want to test the API without integrating it within the application. Which service would help your development team test the API without integration?
+    -> API Explorer
+
+27. Your program manager wants you to set up a hybrid network between your Google Cloud and on-premise infrastructure that allows high bandwidth, low latency connection between both the networks. As a Sr. Cloud Engineer, which one of the following services will you select?
+    -> Virtual Private Network
+
+28. Your client is planning to deploy an application on Google App Engine and has a requirement to store 1TB of data in schemaless, strongly consistent, ACID-compliant database solution. Which of the following would you consider for this?
+    -> Google Cloud Datastore
+
+29. Your company has an application that is deployed using serverless architecture by making use of Cloud Function as backend code, Pub/Sub, Endpoints, and serve the static content via Cloud Storage. Your application is used heavily and you were informed about an issue with respect to the Cloud Function. You realized that the issue is because of the invocation limit per second. What is the default limit set by GCP to invoke a function per second?
+    -> 1000
+
+30. A medical clinic has a retention policy of 5 years. The records older than 4 months get accessed a few times in each quarter for reporting purposes. The clinic is using Cloud Storage to store all their records and is looking for a cost-effective archiving solution. Which object lifecycle management option would you recommend to the clinic authorities?
+    -> Condition: age:120, action:type:SetStorageClass, storageClass: NEARLINE
+
+31. You have deployed a Django 1.5 Python application to App Engine. This version of Django requires Python 3. Due to some issues, App Engine is trying to run the application using Python 2. Which of the following files would you check and modify (if required) to ensure that Python 3 is used with the application?
+    -> app.yaml
+
+32. One of your clients has asked you to create an SFTP server on Google Cloud. Which storage service of Google Cloud will be the most reliable and durable option?
+    -> VM
+
+33. Your engineering team has developed an application which will be deployed using GKE. The application needs a monitoring agent running on each node without fail and any change in the number of nodes should also update the count of the monitoring agent. Which API resource would you use to achieve the desired result?
+    -> Pod
+
+34. You were inspecting the containers on a VM and found out that a pod is running which is no more required. You try to delete it but every time a new pod is created. What do you need to delete now for removing that pod?
+    -> ReplicaSet
+
+35. You are working on a project whose development phase has been completed and the manager has asked you to create a new project for UAT environment which should be a clone of the development environment. Dev environment consists of 5 VMs which need to be replicated to UAT environment. How can you achieve this?
+    -> Create a custom image of each instance in the dev environment and while launching VMs in the UAT environment under boot disk select Custom images, select your project and choose the relevant image.
+
+36. Your client has a web application that is currently using a single GCE to read the messages from a pub/sub topic, process them and store them in Cloud Bigtable by its unique order id. When a user uploads an order to Cloud Storage, it triggers a Cloud Function that inserts a message to pub/subtopic. The traffic is expected to increase next week and as a cloud engineer, you are expected to resolve any possible auto scaling problem. Which service is not likely to auto scale when the traffic is increased?
+    -> Pub/Sub
+
+37. Your application servers are deployed in a private subnet and you connect to an application instance using a bastion host, you connect to the bastion host using Console Shell and then ssh to the respective application instance. Unfortunately, Cloud Shell is taking a lot of time to respond and your manager wants you to ssh to the instance to fix an application specific configuration. What command would you use to SSH into the server from the public end?
+    -> gcloud compute ssh username@bastion-host
+
+38. Your client has prepared a new company policy in which each developer must sign a Contributor License Agreement (CLA) before code changes are committed to any version control repository. You have been asked to check each commit in a repository that includes the policy and your manager has also provided you with node.js code. Which of the following services can help you implement this solution?
+    -> Cloud Function
+
+39. Your client wants to migrate their 30 TB of Hadoop or Spark cluster from an RHEL 6.5 on-premise server to Google Cloud Platform. Which of the following services can be used at the GCP end?
+    -> Dataproc
+
+40. You have a website hosted on a Compute Engine VM. Users can access the website using the domain name you provided. You do some maintenance work on the VM and stop the server and restart it. Now users cannot access the website. No other changes have occurred on the subnet. What might be the cause of the problem?
+    -> You do not have enough addresses available on your subnet.
+
+41. Which is the correct command to bind an IAM policy to a service account at an organization or folder level?
+    -> gcloud organizations add-iam-policy-binding org_id --member serviceAccount:dicoding@dicoding-prj.iam.gserviceaccount.com --role roles/viewer
+
+42. Someone from a different team has approached you that he is working on a web application hosted on Google Cloud VM which needs to view access to Google Cloud Storage service. Which of the following is the best approach?
+    -> Create a custom service account with Google Cloud Storage Viewer role, create a JSON key pair, and provide it to him.
+
+43. One of your team members had accidentally included a service account private JSON key while pushing code to GitHub. What steps should you immediately perform?
+    -> Delete the JSON file from GitHub, remove the key from Google Cloud IAM and generate a new key for use.
+
+44. You are appointed as a head of infrastructure security and the first thing you are asked is to create few IAM users following best security practices. How would you ensure that these users are only able to launch a new instance and list them?
+    -> Create a custom role with specific permissions and attach it to users.
+
+45. You want to filter logs present in Stackdriver Log Viewer using more than a simple text filter. Which feature will allow you to do it?
+    -> Multi-stack Filter
+
+46. PT Bangkit has deployed an application using Google App Engine standard environment. You have been asked to update the cron schedules and default cookie expiration time, which of the following predefined roles has access to update default cookie expiration but no access to update cron schedules?
+    -> App Engine Admin
+
+47. You deployed 10 microservices using Google Kubernetes Engine. The command kubectl run deployed the microservices in different pods, 2 weeks later your manager asked you to delete the pods as the services were no longer needed. Which of the following options is the best way to delete the pods?
+    -> kubectl delete deployments/<name> services/<name>
+
+48. Your client wants you to update a viewer role in your google cloud platform project using CLI. The roles have access to the App Engine list and get method and you have been asked to add the cloud storage list and get permissions. The changes were reflected after you ran the command but the user complained that they are unable to view the content of Cloud Storage buckets using CLI. What could be the most appropriate reason?
+    -> Cloud Storage permission needs to be created and attached separately.
+
+49. You want to list permissions in a role using Cloud Console. Where would you go to see that?
+    -> IAM & Admin; select Roles. Check the box next to a role to display the permissions in that role.
+
+50. A VM instance is trying to read from a Cloud Storage bucket. Reading the bucket is allowed by IAM  roles granted to the service account of the VM. Reading buckets is denied by the scopes assigned to the VM. What will happen if the VM tries to read from the bucket?
+    -> The read will not execute because both scopes and IAM roles are applied to determine what operations can be performed.
